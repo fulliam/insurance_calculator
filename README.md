@@ -24,7 +24,7 @@ DB_PORT = 5432
 DB_NAME = insurance_db
 ```
 
-### Запустить сборку контейнера  
+### Запустить сборку контейнеров  
 ```bash
 docker-compose up --build
 ```
