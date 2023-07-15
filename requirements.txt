@@ -1,0 +1,6 @@
+fastapi-users-db-tortoise
+tortoise-orm
+fastapi
+uvicorn
+asyncpg
+python-dotenv

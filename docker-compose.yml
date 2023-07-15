@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin_insurance
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: insurance_db
+    volumes:
+      - ./data:/var/lib/postgresql/data  
+    networks:
+      - insurance-network
+
+  back:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 5050:5050
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    networks:
+      - insurance-network
+
+networks:
+  insurance-network:
