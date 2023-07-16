@@ -6,12 +6,12 @@
 ## Чтобы протестировать его работу Вам необходимо:  
 ### Клонировать репозиторий  
 ```bash
-git clone https://github.com/fulliam/social_network.git
+git clone https://github.com/fulliam/insurance_calculator.git
 ```
 
 #### Перейти в папку репозитория  
 ```bash
-cd /social_network
+cd /insurance_calculator 
 ```
 
 ### Создать в корневом каталоге репозитория файл .env  
